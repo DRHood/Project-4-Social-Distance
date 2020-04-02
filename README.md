@@ -12,22 +12,25 @@ The purpose of this application is to provide a space to organize virtual gather
 [![Project 4, index view](/p4_images/SD_2.png "Project 4, index view")](/p4_images/SD_2.png)
 
 #### Sign Up View
-[![Project 4, sign up view](/p4_images/SD_ERD.png "Project 4, sign up view")](/p4_images/SD_ERD.png)
+[![Project 4, sign up view](/p4_images/SD_3.png "Project 4, sign up view")](/p4_images/SD_3.png)
 
-#### View
-[![Project 4, view](/p4_images/SD_ERD.png "Project 4, view")](/p4_images/SD_ERD.png)
+#### Profile View
+[![Project 4, profile view](/p4_images/SD_4.png "Project 4, profile view")](/p4_images/SD_4.png)
 
-#### View
-[![Project 4, view](/p4_images/SD_ERD.png "Project 4, view")](/p4_images/SD_ERD.png)
+#### Events View
+[![Project 4, events view](/p4_images/SD_5.png "Project 4, events view")](/p4_images/SD_5.png)
 
-#### View
-[![Project 4, view](/p4_images/SD_ERD.png "Project 4, view")](/p4_images/SD_ERD.png)
+#### Event View
+(Todo)
 
-#### View
-[![Project 4, view](/p4_images/SD_ERD.png "Project 4, view")](/p4_images/SD_ERD.png)
+#### Manage Event View
+[![Project 4, manage event view](/p4_images/SD_6.png "Project 4, manage event view")](/p4_images/SD_6.png)
 
-#### View
-[![Project 4, view](/p4_images/SD_ERD.png "Project 4, view")](/p4_images/SD_ERD.png)
+#### Groups View
+[![Project 4, groups view](/p4_images/SD_7.png "Project 4, groups view")](/p4_images/SD_7.png)
 
-#### View
-[![Project 4, view](/p4_images/SD_ERD.png "Project 4, view")](/p4_images/SD_ERD.png)
+#### Group View
+[![Project 4, group view](/p4_images/SD_8.png "Project 4, group view")](/p4_images/SD_8.png)
+
+#### Manage Group View
+[![Project 4, manage group view](/p4_images/SD_9.png "Project 4, manage group view")](/p4_images/SD_9.png)
