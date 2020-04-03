@@ -1,0 +1,1 @@
+web: gunicorn socdist_project.wsgi --log-file -
