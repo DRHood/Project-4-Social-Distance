@@ -6,6 +6,10 @@
 
 The purpose of this application is to provide a space to organize virtual gatherings, for those that cannot gather face to face.  
 
+### Publicly deployed app
+
+https://social-distance-app.herokuapp.com/
+
 ### ERD
 
 [![Project 4, ERD](/p4_images/SD_1.png "Project 4, ERD")](/p4_images/SD_1.png)
