@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'socdist_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresgl',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'social_distance',
         'USER': 'DRHood',
         'PASSWORD': 'forget',
