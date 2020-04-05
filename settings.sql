@@ -1,0 +1,4 @@
+-- CREATE USER socdist_user With PASSWORD 'social';
+CREATE USER DRHood WITH PASSWORD 'forget';
+CREATE DATABASE social_distance WITH OWNER DRHood;
+GRANT ALL PRIVELEGES ON DATABASE social_distance TO DRHood;
