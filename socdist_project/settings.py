@@ -84,8 +84,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'social_distance',
-        'USER': 'DRHood',
-        'PASSWORD': 'forget',
+        'USER': 'socdis_user',
+        'PASSWORD': 'social',
         'HOST': 'localhost'
     }
 }
