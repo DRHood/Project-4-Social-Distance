@@ -37,7 +37,7 @@ class Group(models.Model):
         return self.group_name
 
 class Event(models.Model):
-    # organizer = User or Group relationship: many to one
+    # organizer = User relationship: many to one
     organizer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_events')
     event_name = models.CharField(max_length=60)
     event_description = models.CharField(max_length=240)
