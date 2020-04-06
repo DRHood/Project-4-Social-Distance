@@ -1,15 +1,16 @@
-import React, {Component} from "react";
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
-import UserList from "./components/UserList";
-import User from "./components/User";
-import "./App.css";
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import UserList from './components/UserList';
+import User from './components/User';
+import Navbar from './components/Navbar';
+import './App.css';
 
 class App extends Component {
     render() {
         return (
             <Router>
                 <div className="App">
-
+                    <Navbar/>
                     <div>
                         <h1>Social Distance</h1>
                         <div>
@@ -19,7 +20,7 @@ class App extends Component {
 
                     <Switch>
                       <Route exact path="/" component={UserList}/>
-                      <Route path="/User/:id" component={User}/>
+                      <Route exact path="/User/:id" component={User}/>
                     </Switch>
                 </div>
             </Router>

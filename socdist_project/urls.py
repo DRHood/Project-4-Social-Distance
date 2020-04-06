@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.FrontendAppView.as_view()), #New URL for index route
+    path('', views.FrontendAppView.as_view()),
     path('api/v1/', include('socdist_app.urls')),
-    re_path(r'^.*$', views.FrontendAppView.as_view()), #Says search Frontend for all other routes, so refreshing doesn't make the deployed page error
+    re_path(r'^.*$', views.FrontendAppView.as_view()),
 ]

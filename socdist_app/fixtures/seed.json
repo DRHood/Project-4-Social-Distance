@@ -1,6 +1,6 @@
 [
     {
-        "model": "socdis_app.models.User",
+        "model": "socdist_app.models.User",
         "pk": 1,
         "fields": {
             "username": "SomethingWicked",
@@ -13,7 +13,7 @@
         }
     },
     {
-        "model": "socdis_app.models.User",
+        "model": "socdist_app.models.User",
         "pk": 2,
         "fields": {
             "username": "Pinhead613",
@@ -26,7 +26,7 @@
         }
     },
     {
-        "model": "socdis_app.models.User",
+        "model": "socdist_app.models.User",
         "pk": 3,
         "fields": {
             "username": "BigRed",
@@ -39,7 +39,7 @@
         }
     },
     {
-        "model": "socdis_app.models.Group",
+        "model": "socdist_app.models.Group",
         "pk": 1,
         "fields": {
             "organizer": 1,
@@ -51,7 +51,7 @@
         }
     },
     {
-        "model": "socdis_app.models.Group",
+        "model": "socdist_app.models.Group",
         "pk": 2,
         "fields": {
             "organizer": "3",
@@ -63,7 +63,7 @@
         }
     },
     {
-        "model": "socdis_app.models.Event",
+        "model": "socdist_app.models.Event",
         "pk": 1,
         "fields": {
             "organizer": 2,
