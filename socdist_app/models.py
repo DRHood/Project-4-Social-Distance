@@ -9,8 +9,6 @@ class User(models.Model):
     location = models.CharField(max_length=120)
     email = models.CharField(max_length=120)
     # password = TODO
-    # events = Event relationship: many to many
-    # groups = Group relationship: many to many
 
     class Meta:
         ordering = ['username']
@@ -28,7 +26,6 @@ class Group(models.Model):
     individual_invites = models.ManyToManyField(User, related_name='group_invites')
     # members = User relationship: many to many
     members = models.ManyToManyField(User, related_name='member_groups')
-    # events = Event relationship: one to many
 
     class Meta:
         ordering = ['group_name']
@@ -44,7 +41,7 @@ class Event(models.Model):
     event_img_url = models.CharField(max_length=240)
     event_date = models.DateField()
     event_time = models.TimeField()
-    # group = Group relationship: many to one
+    # group_invite = Group relationship: many to one
     group_invite = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='event_invites')
     # individual_invites = User relationship: many to many
     individual_invites = models.ManyToManyField(User, related_name='event_invites')
