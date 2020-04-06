@@ -1,0 +1,80 @@
+[
+    {
+        "model": "socdis_app.models.User",
+        "pk": 1,
+        "fields": {
+            "username": "SomethingWicked",
+            "first_name": "Elvira",
+            "last_name": "Mistress of the Dark",
+            "bio": "Movie hostess, actress, and Queen of Halloween.",
+            "photo_url": "https://41z6h24c86pu1h3m6x151ecm-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/elvira-3-272x408.jpg",
+            "location": "New England",
+            "email": "elvira@notathing.com"
+        }
+    },
+    {
+        "model": "socdis_app.models.User",
+        "pk": 2,
+        "fields": {
+            "username": "Pinhead613",
+            "first_name": "Elliot",
+            "last_name": "Spencer",
+            "bio": "Demon to some, angel to others.",
+            "photo_url": "https://www.clivebarker.info/pinheader.jpg",
+            "location": "Hell's Labyrinthe",
+            "email": "theengineer@infernalmail.com"
+        }
+    },
+    {
+        "model": "socdis_app.models.User",
+        "pk": 3,
+        "fields": {
+            "username": "BigRed",
+            "first_name": "Kool-Aid",
+            "last_name": "Man",
+            "bio": "I get pretty excited about Kool-Aid!!",
+            "photo_url": "https://i.ytimg.com/vi/nahitqVViYM/sddefault.jpg",
+            "location": "in the fridge",
+            "email": "k.a.man@ohyeah!.com"
+        }
+    },
+    {
+        "model": "socdis_app.models.Group",
+        "pk": 1,
+        "fields": {
+            "organizer": 1,
+            "group_name": "Fiendishly Fabulous",
+            "group_description": "A space for the greatest creatures of the night to come together.",
+            "public": true,
+            "individual_invites": "3",
+            "members": [1, 2]
+        }
+    },
+    {
+        "model": "socdis_app.models.Group",
+        "pk": 2,
+        "fields": {
+            "organizer": "3",
+            "group_name": "Summertime Fun!",
+            "group_description": "Just what the name says!!!",
+            "public": true,
+            "individual_invites": "",
+            "members": [1, 2, 3]
+        }
+    },
+    {
+        "model": "socdis_app.models.Event",
+        "pk": 1,
+        "fields": {
+            "organizer": 2,
+            "event_name": "American Egos Conference",
+            "event_description": "Let's come together, and talk about how great we are.",
+            "event_img_url": "https://d32dm0rphc51dk.cloudfront.net/Kn-4fxnIdkOq0er5ksSP8A/large.jpg",
+            "event_date": "",
+            "event_time": "",
+            "group_invite": 2,
+            "individual_invites": "",
+            "members": 2
+        }
+    }
+]

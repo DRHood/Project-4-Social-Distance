@@ -19,7 +19,7 @@ class User(models.Model):
         return self.username
 
 class Group(models.Model):
-    # organizer = User relationship: many to one TODO
+    # organizer = User relationship: many to one
     organizer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_groups')
     group_name = models.CharField(max_length=60)
     group_description = models.CharField(max_length=240)
