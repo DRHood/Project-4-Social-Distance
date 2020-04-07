@@ -4,6 +4,7 @@ import axios from 'axios';
 export default class Event extends Component {
 
     state = {
+            error: '',
             event: {},
     }
 
