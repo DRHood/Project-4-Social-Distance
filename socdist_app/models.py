@@ -2,11 +2,8 @@ from django.db import models
 
 class User(models.Model):
     username = models.CharField(max_length=60)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
     bio = models.CharField(max_length=480)
     photo_url = models.CharField(max_length=240)
-    location = models.CharField(max_length=120)
     email = models.CharField(max_length=120)
     # password = TODO
 
@@ -19,7 +16,7 @@ class User(models.Model):
 class Group(models.Model):
     group_name = models.CharField(max_length=60)
     group_description = models.CharField(max_length=240)
-    public = models.BooleanField(default=True)
+    group_img_url = models.CharField(max_length=240)
     members = models.ManyToManyField(User, related_name='my_groups')
 
     class Meta:
@@ -31,7 +28,6 @@ class Group(models.Model):
 class Event(models.Model):
     event_name = models.CharField(max_length=60)
     event_description = models.CharField(max_length=240)
-    event_img_url = models.CharField(max_length=240)
     event_date = models.DateField()
     event_time = models.TimeField()
     attending = models.ManyToManyField(User, related_name='my_events')

@@ -1,5 +1,5 @@
 {
- "name": "social_distance",
+ "name": "social-distance-app",
  "scripts": {
      "build": "cd client && npm install && npm run build && cd ..",
      "postinstall": "npm run build && echo 'Client built!'"
