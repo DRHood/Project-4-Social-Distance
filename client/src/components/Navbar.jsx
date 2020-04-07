@@ -8,6 +8,7 @@ export default class Navbar extends Component {
                 <h1>Soc_Dist</h1>
                 <div>
                     <div><Link to="/">Home</Link></div>
+                    
                 </div>
             </div>
         )
