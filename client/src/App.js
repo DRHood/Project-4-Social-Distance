@@ -5,7 +5,7 @@ import Event from './components/Event';
 // import Navbar from './components/Navbar';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
     render() {
         return (
             <Router>
@@ -26,6 +26,4 @@ class App extends Component {
             </Router>
         );
     }
-}
-
-export default App;
+};

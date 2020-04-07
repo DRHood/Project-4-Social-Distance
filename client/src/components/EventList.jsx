@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-export default class EventList extends Component{
+class EventList extends Component {
     state = {
-        error:'',
+        error: '',
         events: []
     }
 
@@ -14,8 +14,8 @@ export default class EventList extends Component{
 
     fetchEvents = async () => {
         try {
-            constres = await axios.get('api/v1/Events');
-            this.setState({artists: resizeBy.data});
+            const res = await axios.get('/api/v1/events');
+            this.setState({events: res.data});
         }
         catch (err) {
             console.log(err)
@@ -29,13 +29,15 @@ export default class EventList extends Component{
         }
         return (
             <div>
-                <h1>Upcoming Events</h1>
+                <h1>All Events</h1>
                 {this.state.events.map(event => (
                     <div key={event.id}>
-                        <Link to={`/event/${event.id}`}>{event.event_name}</Link>
+                        <Link to={`/event/${event.id}`} >{event.name}</Link>
                     </div>
                 ))}
             </div>
-        )
+        );
     }
 }
+
+export default EventList;
