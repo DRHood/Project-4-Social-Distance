@@ -17,15 +17,10 @@ class User(models.Model):
         return self.username
 
 class Group(models.Model):
-    # organizer = User relationship: many to one
-    organizer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_groups')
     group_name = models.CharField(max_length=60)
     group_description = models.CharField(max_length=240)
     public = models.BooleanField(default=True)
-    # individual_invites = User relationship: many to many
-    individual_invites = models.ManyToManyField(User, related_name='group_invites')
-    # members = User relationship: many to many
-    members = models.ManyToManyField(User, related_name='member_groups')
+    members = models.ManyToManyField(User, related_name='my_groups')
 
     class Meta:
         ordering = ['group_name']
@@ -34,19 +29,12 @@ class Group(models.Model):
         return self.group_name
 
 class Event(models.Model):
-    # organizer = User relationship: many to one
-    organizer = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_events')
     event_name = models.CharField(max_length=60)
     event_description = models.CharField(max_length=240)
     event_img_url = models.CharField(max_length=240)
     event_date = models.DateField()
     event_time = models.TimeField()
-    # group_invite = Group relationship: many to one
-    group_invite = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='event_invites')
-    # individual_invites = User relationship: many to many
-    individual_invites = models.ManyToManyField(User, related_name='event_invites')
-    # members = User relatioship: many to many
-    members = models.ManyToManyField(User, related_name='member_events')
+    attending = models.ManyToManyField(User, related_name='my_events')
     
     class Meta:
         ordering = ['event_name']
