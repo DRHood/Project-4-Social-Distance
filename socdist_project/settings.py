@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_extensions',
     'socdist_app',
+    # # Authentication
+    # 'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +78,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'socdist_project.wsgi.application'
 
+
+###################
+# PAY ATTENTION!!!#
+###################
+
+# REST_FRAMEWORK = {
+#     # Use Django's standard `django.contrib.auth` permissions,
+#     # or allow read-only access for unauthorized users.
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated'
+#     ],
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#     'rest_framework.authentication.TokenAuthentication')
+# }
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

@@ -6,6 +6,8 @@
 
 The purpose of this application is to provide a space to organize virtual gatherings, for those that cannot gather face to face.  
 
+[Project board](https://git.generalassemb.ly/DRHood/Project-4-Social-Distance/projects/1)
+
 ### Publicly deployed app
 
 [Social Distance App](https://social-distance-app.herokuapp.com/)
@@ -34,7 +36,7 @@ The purpose of this application is to provide a space to organize virtual gather
 
 #### Event View
 
-(Todo)
+[![Project 4, event view](/p4_images/SD_5b.png "Project 4, event view")](/p4_images/SD_5b.png)
 
 #### Manage Event View
 

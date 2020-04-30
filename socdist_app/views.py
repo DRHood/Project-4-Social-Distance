@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import serializers, viewsets, permissions
 from .serializers import UserSerializer, GroupSerializer, EventSerializer
 from .models import User, Group, Event
 
